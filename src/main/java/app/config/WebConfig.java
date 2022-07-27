@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "app.dao")
+@ComponentScan(basePackages = "app")
 public class WebConfig {
     @Bean
     ViewResolver viewResolver(){

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+<table border=1>
+    <tr>
+        <td>ID</td>
+        <td>Модель</td>
+        <td>Год выпуска</td>
+        <td>Год выпуска</td>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:utext="${user.id}"></td>
+        <td th:utext="${user.name}"></td>
+        <td th:utext="${user.age}"></td>
+        <td th:utext="${user.city}"></td>
+    </tr>
+</table>
+</body>
+</html>
