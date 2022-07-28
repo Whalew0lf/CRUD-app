@@ -15,11 +15,11 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/users")
-    public String getUsers(ModelMap model){
+    public String getUsers(ModelMap modelMap){
         System.out.println("АААААА");
-        List<User> users = userService.getAllUsers();
+        //List<User> users = userService.getAllUsers();
 
-        model.addAttribute("users", users);
-        return "users";
+        //model.addAttribute("users", users);
+        return "user";
     }
 }

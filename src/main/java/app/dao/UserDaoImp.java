@@ -11,20 +11,21 @@ import java.util.List;
 @Repository
 public class UserDaoImp implements UserDao {
 
-    @PersistenceContext
-    private EntityManager entityManager;
+   // @PersistenceContext
+    //private EntityManager entityManager;
 
     @Override
     public List<User> getAllUsers() {
-        Query query = entityManager.createQuery("SELECT User from User");
-        query.executeUpdate();
-        return query.getResultList();
+    //    Query query = entityManager.createQuery("SELECT User from User");
+    //    query.executeUpdate();
+    //    return query.getResultList();
+        return null;
     }
 
     @Override
     public void addUser(String name, int age, String city) {
-        User user = new User(name,age,city);
-        entityManager.persist(user);
+    //    User user = new User(name,age,city);
+    //    entityManager.persist(user);
     }
 
     @Override
